@@ -7,5 +7,12 @@ calif3 = int(input("Ingresa la tercer calificación: "))
 sum_promedio = calif1 + calif2 + calif3
 prom_final = sum_promedio / 3
 
-#Salida de datos
-print("Tu promedio es: ", prom_final)
+if (prom_final >= 6 and prom_final <= 10):
+    print("Aprobado")
+elif (prom_final == 6):
+    print("Ta bien pansaso")
+elif (prom_final >=0 and prom_final <=6):
+    print("Reprobado")
+elif (prom_final <=0 or prom_final >10):
+    print("ERROR EN PROMEDIO")
+
